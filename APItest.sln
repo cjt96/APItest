@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonGo.RocketAPI", "..\..\..\PokeGoAPI2\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\PokemonGo.RocketAPI.csproj", "{05D2DA44-1B8E-4CF7-94ED-4D52451CD095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForm", "TestForm\TestForm.csproj", "{8114F4F7-7626-4DB7-84DC-7311E85605DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonGo.RocketAPITests", "PokemonGo.RocketAPITests\PokemonGo.RocketAPITests.csproj", "{B09EBEE7-BBB7-43B2-A609-EAB0AC41D998}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PogoLib", "PogoLib\PogoLib.csproj", "{36F85416-9AE3-4E5A-AED8-50A97F916ADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PogoLibTests", "PogoLibTests\PogoLibTests.csproj", "{B3CC1E47-1F84-4086-986B-E471B068E07F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05D2DA44-1B8E-4CF7-94ED-4D52451CD095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D2DA44-1B8E-4CF7-94ED-4D52451CD095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D2DA44-1B8E-4CF7-94ED-4D52451CD095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D2DA44-1B8E-4CF7-94ED-4D52451CD095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8114F4F7-7626-4DB7-84DC-7311E85605DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8114F4F7-7626-4DB7-84DC-7311E85605DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8114F4F7-7626-4DB7-84DC-7311E85605DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8114F4F7-7626-4DB7-84DC-7311E85605DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09EBEE7-BBB7-43B2-A609-EAB0AC41D998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09EBEE7-BBB7-43B2-A609-EAB0AC41D998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09EBEE7-BBB7-43B2-A609-EAB0AC41D998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09EBEE7-BBB7-43B2-A609-EAB0AC41D998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F85416-9AE3-4E5A-AED8-50A97F916ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F85416-9AE3-4E5A-AED8-50A97F916ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F85416-9AE3-4E5A-AED8-50A97F916ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F85416-9AE3-4E5A-AED8-50A97F916ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3CC1E47-1F84-4086-986B-E471B068E07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3CC1E47-1F84-4086-986B-E471B068E07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3CC1E47-1F84-4086-986B-E471B068E07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3CC1E47-1F84-4086-986B-E471B068E07F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
