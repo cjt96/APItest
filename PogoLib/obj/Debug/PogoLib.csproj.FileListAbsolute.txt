@@ -14,3 +14,8 @@ C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\bin\Debug\Sys
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\obj\Debug\PogoLib.csprojResolveAssemblyReference.cache
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\obj\Debug\PogoLib.dll
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\obj\Debug\PogoLib.pdb
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\bin\Debug\PogoLib.dll
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\bin\Debug\PogoLib.pdb
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\obj\Debug\PogoLib.csprojResolveAssemblyReference.cache
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\obj\Debug\PogoLib.dll
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\obj\Debug\PogoLib.pdb
