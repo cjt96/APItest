@@ -29,7 +29,7 @@ namespace TestForm
 
             foreach (var pokemon in nearbyPokemon)
             {
-                if (!listBox1.Items.Contains(pokemon.PokemonId))
+                if (!listBox1.Items.Contains(pokemon.PokemonId.ToString()))
                 {
                     sb.AppendLine(pokemon.DistanceInMeters.ToString());
                     sb.AppendLine(pokemon.EncounterId.ToString());

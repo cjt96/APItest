@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestForm</RootNamespace>
     <AssemblyName>TestForm</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,8 +46,9 @@
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data">
       <HintPath>..\..\..\..\PokeGoAPI2\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\bin\Debug\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\Pokemon API\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\PokeGoAPI2\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PogoLib">
       <HintPath>..\PogoLib\bin\Debug\PogoLib.dll</HintPath>
@@ -119,6 +121,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,7 +1,6 @@
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\TestForm.exe.config
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.csproj.TestForm.exe.config
-C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.Form1.resources
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.Properties.Resources.resources
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\TestForm.exe
@@ -21,7 +20,6 @@ C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\C5
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\Google.Protobuf.xml
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.xml
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.xml
-C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\Newtonsoft.Json.xml
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\Pokemon Go Rocket API.pdb
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\S2Geometry.xml
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\System.Net.Http.Formatting.xml
@@ -44,3 +42,9 @@ C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\
 C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.InfoForm.resources
 C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.LogInForm.resources
 C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.Mainform.resources
+C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\PogoLib.pdb
+C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.InfoForm.resources
+C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.LogInForm.resources
+C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.Mainform.resources
+C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\PogoLib.dll
+C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\Newtonsoft.Json.xml

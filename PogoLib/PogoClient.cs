@@ -131,7 +131,6 @@ namespace PogoLib
         /// <returns>A list of nearby pokemon.</returns>
         public async Task<List<NearbyPokemon>> GetNearbyPokemon()
         {
-            if (!_loggedIn) throw new NotLoggedInException();
             RepeatedField<MapCell> mapCells = await GetMapCell();
             List<NearbyPokemon> nearbyPokemon = new List<NearbyPokemon>();
 
@@ -146,6 +145,24 @@ namespace PogoLib
                 }
             }
             return nearbyPokemon;
+        }
+
+        public async Task<List<SpawnPoint>> GetSpawnPoints()
+        {
+            RepeatedField<MapCell> mapCells = await GetMapCell();
+            List<SpawnPoint> spawnPoints = new List<SpawnPoint>();
+
+            if (mapCells.Count != 0)
+            {
+                foreach (var mapCell in mapCells)
+                {
+                    if (mapCell.SpawnPoints.Count != 0)
+                    {
+                        spawnPoints.AddRange(mapCell.SpawnPoints);
+                    }
+                }
+            }
+            return spawnPoints;
         }
     }
 }
