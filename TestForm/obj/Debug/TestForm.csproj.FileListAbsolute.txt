@@ -25,23 +25,6 @@ C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\S2
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.exe
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.pdb
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\TestForm.exe.config
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.exe
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.pdb
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\TestForm.exe
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\TestForm.pdb
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\System.Net.Http.Formatting.dll
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.csproj.TestForm.exe.config
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.Properties.Resources.resources
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\PogoLib.dll
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\PogoLib.pdb
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.InfoForm.resources
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.LogInForm.resources
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.Mainform.resources
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\PogoLib.pdb
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.InfoForm.resources
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.LogInForm.resources
@@ -62,3 +45,21 @@ C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestFor
 C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
 C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.exe
 C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.pdb
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.csproj.TestForm.exe.config
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.InfoForm.resources
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.LogInForm.resources
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.Mainform.resources
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.Properties.Resources.resources
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\TestForm.exe.config
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\TestForm.exe
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\TestForm.pdb
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\PogoLib.dll
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.exe
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.pdb
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\bin\Debug\PogoLib.pdb
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\TestForm\obj\Debug\TestForm.UpdateLocation.resources

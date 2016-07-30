@@ -16,7 +16,7 @@ namespace TestForm
         {
             try
             {
-                _client = new PogoClient(190, 52.6031758, -2.1284145, "PogoTrackerCW", "SnHackable25@!");
+                _client = new PogoClient(190, 52.6229622651157, -2.12332305297419, "PogoTrackerCW", "SnHackable25@!");
                 await _client.LogIn();
                 var player = await _client.GetPlayerInformation();
                 MessageBox.Show(string.Format("Logged in player {0}", player.Username));

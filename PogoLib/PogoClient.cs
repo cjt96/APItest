@@ -12,6 +12,8 @@ using POGOProtos.Map;
 using Google.Protobuf.Collections;
 using POGOProtos.Map.Pokemon;
 using System.Reflection;
+using static POGOProtos.Networking.Responses.CatchPokemonResponse.Types;
+using PogoLib.Summaries;
 
 namespace PogoLib
 {
@@ -22,16 +24,13 @@ namespace PogoLib
         private AuthType _authType;
         private bool _loggedIn;
 
+        /// <summary>
+        /// Check if logged into the servers.
+        /// </summary>
         public bool LoggedIn
         {
-            get
-            {
-                return _loggedIn;
-            }
-            set
-            {
-                _loggedIn = value;
-            }
+            get { return _loggedIn; }
+            set { _loggedIn = value; }
         }
 
         #region Constructors
@@ -190,6 +189,37 @@ namespace PogoLib
                 }
             }
             return collection;
+        }
+
+        /// <summary>
+        /// Capture a pokemon that is in position to be encountered.
+        /// </summary>
+        /// <param name="encounterId">Encounter Id.</param>
+        /// <param name="spawnPointGuid">Spawn point Id.</param>
+        /// <param name="pokeballId">Ball item Id.</param>
+        /// <returns>True if the pokemon was caught, False otherwise.</returns>
+        public async Task<CaptureSummary> CaptureSpawnedPokemon(ulong encounterId, string spawnPointGuid, POGOProtos.Inventory.Item.ItemId pokeballId)
+        {
+            var encounter = await _client.Encounter.EncounterPokemon(encounterId, spawnPointGuid);
+            CaptureSummary captureSummary = new CaptureSummary(encounter);
+            if (encounter.Status != POGOProtos.Networking.Responses.EncounterResponse.Types.Status.EncounterSuccess) return captureSummary;
+            var capture = await _client.Encounter.CatchPokemon(encounter.WildPokemon.EncounterId, encounter.WildPokemon.SpawnPointId, pokeballId);
+
+            captureSummary.CatchStatus = capture.Status;
+            captureSummary.CaptureAward = capture.CaptureAward;
+            captureSummary.CapturedPokemonId = capture.CapturedPokemonId;
+            return captureSummary;
+        }
+
+        /// <summary>
+        /// Update the players location.
+        /// </summary>
+        /// <param name="latitude">Latitude.</param>
+        /// <param name="longitude">Longitude.</param>
+        /// <param name="altitude">Altitude.</param>
+        public async void UpdatePlayerLocation(double latitude, double longitude, double altitude)
+        {
+            var response = await _client.Player.UpdatePlayerLocation(latitude,longitude,altitude);
         }
     }
 }
