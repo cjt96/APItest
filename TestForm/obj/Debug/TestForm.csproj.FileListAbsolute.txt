@@ -48,3 +48,17 @@ C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\Te
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\obj\Debug\TestForm.Mainform.resources
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\PogoLib.dll
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\TestForm\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\bin\Debug\TestForm.exe.config
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\bin\Debug\TestForm.exe
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\bin\Debug\TestForm.pdb
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\bin\Debug\PogoLib.dll
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\bin\Debug\PogoLib.pdb
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.csproj.TestForm.exe.config
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.InfoForm.resources
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.LogInForm.resources
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.Mainform.resources
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.Properties.Resources.resources
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.exe
+C:\Users\cjt_9\Documents\Development Projects\APItest\TestForm\obj\Debug\TestForm.pdb

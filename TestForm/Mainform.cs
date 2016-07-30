@@ -1,4 +1,5 @@
 ﻿using PogoLib;
+using POGOProtos.Map;
 using POGOProtos.Map.Pokemon;
 using System;
 using System.Collections.Generic;
@@ -23,8 +24,8 @@ namespace TestForm
 
         private async void btnPokeNear_Click(object sender, EventArgs e)
         {
+            InfoForm _info = new InfoForm();
             List<NearbyPokemon> nearbyPokemon = await _client.GetNearbyPokemon();
-            InfoForm info = new InfoForm();
             StringBuilder sb = new StringBuilder();
 
             foreach (var pokemon in nearbyPokemon)
@@ -39,14 +40,73 @@ namespace TestForm
                 }
             }
 
-            info.richTextBox1.Text = sb.ToString();
-            info.Show();
+            _info.richTextBox1.Text = sb.ToString();
+            _info.Show();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBox1.Text)) return;
             listBox1.Items.Add(textBox1.Text);
+        }
+
+        private async void btnGetSpawn_Click(object sender, EventArgs e)
+        {
+            InfoForm _info = new InfoForm();
+            List<SpawnPoint> spawnPoints = await _client.GetSpawnPoints();
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var spawn in spawnPoints)
+            {
+                sb.AppendLine(spawn.Latitude.ToString());
+                sb.AppendLine(spawn.Longitude.ToString());
+                sb.AppendLine();
+                sb.AppendLine();
+            }
+
+            _info.richTextBox1.Text = sb.ToString();
+            _info.Show();
+        }
+
+        private async void btnGetWild_Click(object sender, EventArgs e)
+        {
+            InfoForm _info = new InfoForm();
+            List<WildPokemon> wildPokemon = await _client.GetWildPokemon();
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var pokemon in wildPokemon)
+            {
+                sb.AppendLine(string.Format("Latitude {0}, Longitude {1}", pokemon.Latitude, pokemon.Longitude));
+                sb.AppendLine(pokemon.EncounterId.ToString());
+                sb.AppendLine(pokemon.SpawnPointId.ToString());
+                sb.AppendLine(pokemon.TimeTillHiddenMs.ToString());
+                sb.AppendLine(pokemon.PokemonData.Cp.ToString());
+                sb.AppendLine();
+                sb.AppendLine();
+            }
+
+            _info.richTextBox1.Text = sb.ToString();
+            _info.Show();
+        }
+
+        private async void btnGetCatchable_Click(object sender, EventArgs e)
+        {
+            InfoForm _info = new InfoForm();
+            List<MapPokemon> catchablePokemon = await _client.GetCatchablePokemon();
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var pokemon in catchablePokemon)
+            {
+                sb.AppendLine(string.Format("Latitude {0}, Longitude {1}", pokemon.Latitude, pokemon.Longitude));
+                sb.AppendLine(pokemon.EncounterId.ToString());
+                sb.AppendLine(pokemon.SpawnPointId.ToString());
+                sb.AppendLine(pokemon.PokemonId.ToString());
+                sb.AppendLine();
+                sb.AppendLine();
+            }
+
+            _info.richTextBox1.Text = sb.ToString();
+            _info.Show();
         }
     }
 }

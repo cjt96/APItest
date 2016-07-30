@@ -29,3 +29,14 @@ C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLibTests\bin\De
 C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLibTests\obj\Debug\PogoLibTests.csprojResolveAssemblyReference.cache
 C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLibTests\obj\Debug\PogoLibTests.dll
 C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLibTests\obj\Debug\PogoLibTests.pdb
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLibTests\bin\Debug\PogoLibTests.dll
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLibTests\bin\Debug\PogoLibTests.pdb
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLibTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLibTests\bin\Debug\PogoLib.dll
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLibTests\bin\Debug\Pokemon Go Rocket API.dll
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLibTests\bin\Debug\Google.Protobuf.dll
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLibTests\bin\Debug\PogoLib.pdb
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLibTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLibTests\obj\Debug\PogoLibTests.csprojResolveAssemblyReference.cache
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLibTests\obj\Debug\PogoLibTests.dll
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLibTests\obj\Debug\PogoLibTests.pdb

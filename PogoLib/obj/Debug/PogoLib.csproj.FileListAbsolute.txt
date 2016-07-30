@@ -19,3 +19,8 @@ C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\bin\Debug\P
 C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\obj\Debug\PogoLib.csprojResolveAssemblyReference.cache
 C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\obj\Debug\PogoLib.dll
 C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\obj\Debug\PogoLib.pdb
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\bin\Debug\PogoLib.dll
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\bin\Debug\PogoLib.pdb
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\obj\Debug\PogoLib.dll
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\obj\Debug\PogoLib.pdb
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\obj\Debug\PogoLib.csprojResolveAssemblyReference.cache

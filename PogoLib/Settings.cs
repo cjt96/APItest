@@ -38,6 +38,7 @@ namespace PogoLib
         public AuthType AuthType
         {
             get { return authType; }
+            set { authType = value; }
         }
 
         public double DefaultAltitude
@@ -57,14 +58,8 @@ namespace PogoLib
 
         public string GoogleRefreshToken
         {
-            get
-            {
-                return googleRefreshToken;
-            }
-            set
-            {
-                googleRefreshToken = value;
-            }
+            get { return googleRefreshToken; }
+            set { googleRefreshToken = value; }
         }
 
         public string PtcPassword

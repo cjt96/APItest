@@ -16,5 +16,10 @@ namespace TestForm
         {
             InitializeComponent();
         }
+
+        private void InfoForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            richTextBox1.Text = string.Empty;
+        }
     }
 }

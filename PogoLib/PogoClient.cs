@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 using PokemonGo.RocketAPI;
 using PokemonGo.RocketAPI.Enums;
 using PogoLib.Exceptions;
+using PogoLib.Enums;
 using POGOProtos.Data;
 using POGOProtos.Map;
 using Google.Protobuf.Collections;
 using POGOProtos.Map.Pokemon;
+using System.Reflection;
 
 namespace PogoLib
 {
@@ -131,38 +133,63 @@ namespace PogoLib
         /// <returns>A list of nearby pokemon.</returns>
         public async Task<List<NearbyPokemon>> GetNearbyPokemon()
         {
-            RepeatedField<MapCell> mapCells = await GetMapCell();
             List<NearbyPokemon> nearbyPokemon = new List<NearbyPokemon>();
-
-            if (mapCells.Count != 0)
-            {
-                foreach (var mapCell in mapCells)
-                {
-                    if (mapCell.NearbyPokemons.Count != 0)
-                    {
-                        nearbyPokemon.AddRange(mapCell.NearbyPokemons);
-                    }
-                }
-            }
-            return nearbyPokemon;
+            return await GetMapCellInformation(PropertyName.NearbyPokemons.ToString(), nearbyPokemon);
         }
 
+        /// <summary>
+        /// Gets the pokemon spawn points.
+        /// </summary>
+        /// <returns>List of spawn points.</returns>
         public async Task<List<SpawnPoint>> GetSpawnPoints()
         {
-            RepeatedField<MapCell> mapCells = await GetMapCell();
             List<SpawnPoint> spawnPoints = new List<SpawnPoint>();
+            return await GetMapCellInformation(PropertyName.SpawnPoints.ToString(), spawnPoints);
+        }
 
-            if (mapCells.Count != 0)
+        /// <summary>
+        /// Get the catchable pokemon.
+        /// </summary>
+        /// <returns>List of catchable pokemon.</returns>
+        public async Task<List<MapPokemon>> GetCatchablePokemon()
+        {
+            List<MapPokemon> mapPokemon = new List<MapPokemon>();
+            return await GetMapCellInformation(PropertyName.CatchablePokemons.ToString(), mapPokemon);
+        }
+
+        /// <summary>
+        /// Get wild pokemon.
+        /// </summary>
+        /// <returns>List of wild pokemon.</returns>
+        public async Task<List<WildPokemon>> GetWildPokemon()
+        {
+            List<WildPokemon> wildPokemon = new List<WildPokemon>();
+            return await GetMapCellInformation(PropertyName.WildPokemons.ToString(), wildPokemon);
+        }
+
+        /// <summary>
+        /// Get information from the Map Cell.
+        /// </summary>
+        /// <typeparam name="T">Type to return.</typeparam>
+        /// <param name="propName">Name of the property to return.</param>
+        /// <param name="collection">Collection to fill.</param>
+        /// <returns>Fills the collection with information.</returns>
+        private async Task<List<T>> GetMapCellInformation<T>(string propName,List<T> collection)
+        {
+            RepeatedField<MapCell> mapCells = await GetMapCell();
+            foreach (var mapCell in mapCells)
             {
-                foreach (var mapCell in mapCells)
+                object obj = mapCell;
+                PropertyInfo propInfo = obj.GetType().GetProperty(propName);
+                object itemValue = propInfo.GetValue(obj, null);
+                RepeatedField<T> infoCollection = (RepeatedField<T>)itemValue;
+
+                if (infoCollection.Count != 0)
                 {
-                    if (mapCell.SpawnPoints.Count != 0)
-                    {
-                        spawnPoints.AddRange(mapCell.SpawnPoints);
-                    }
+                    collection.AddRange(infoCollection);
                 }
             }
-            return spawnPoints;
+            return collection;
         }
     }
 }

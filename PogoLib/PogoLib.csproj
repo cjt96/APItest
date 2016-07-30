@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\PropertyName.cs" />
     <Compile Include="Exceptions\NotLoggedInException.cs" />
     <Compile Include="PogoClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
