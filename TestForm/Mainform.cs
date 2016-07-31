@@ -1,6 +1,7 @@
 ﻿using PogoLib;
 using PogoLib.Summaries;
 using POGOProtos.Map;
+using POGOProtos.Map.Fort;
 using POGOProtos.Map.Pokemon;
 using System;
 using System.Collections.Generic;
@@ -123,6 +124,30 @@ namespace TestForm
             }
             ul._client = _client;
             ul.Show();
+        }
+
+        private async void button2_Click(object sender, EventArgs e)
+        {
+            List<FortData> forts = await _client.GetNearbyPokeStops();
+            StringBuilder sb = new StringBuilder();
+            foreach (var fort in forts)
+            {
+                sb.AppendLine(fort.Type.ToString());
+                sb.AppendLine(string.Format("{0},{1}", fort.Latitude, fort.Longitude));
+            }
+
+            InfoForm infoForm = new InfoForm();
+            infoForm.richTextBox1.Text = sb.ToString();
+            infoForm.Show();
+        }
+
+        private async void button3_Click(object sender, EventArgs e)
+        {
+            List<FortData> forts = await _client.GetNearbyPokeStops();
+            PokeStopSummary psSummary = await _client.CollectPokeStop(forts);
+            InfoForm infoForm = new InfoForm();
+            infoForm.richTextBox1.Text = psSummary.Message;
+            infoForm.Show();
         }
     }
 }

@@ -47,7 +47,7 @@
       <HintPath>..\..\..\..\PokeGoAPI2\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\bin\Debug\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\Pokemon API\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\bin\Debug\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\APItest\bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PogoLib">
       <HintPath>..\PogoLib\bin\Debug\PogoLib.dll</HintPath>
@@ -65,7 +65,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\PokeGoAPI2\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\bin\Debug\System.Net.Http.Formatting.dll</HintPath>
+      <HintPath>..\APItest\bin\Debug\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
     <Reference Include="System.VarintBitConverter">
       <HintPath>..\..\..\..\PokeGoAPI2\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\bin\Debug\System.VarintBitConverter.dll</HintPath>

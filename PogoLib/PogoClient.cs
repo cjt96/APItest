@@ -14,6 +14,7 @@ using POGOProtos.Map.Pokemon;
 using System.Reflection;
 using static POGOProtos.Networking.Responses.CatchPokemonResponse.Types;
 using PogoLib.Summaries;
+using POGOProtos.Map.Fort;
 
 namespace PogoLib
 {
@@ -220,6 +221,36 @@ namespace PogoLib
         public async void UpdatePlayerLocation(double latitude, double longitude, double altitude)
         {
             var response = await _client.Player.UpdatePlayerLocation(latitude,longitude,altitude);
+        }
+
+        /// <summary>
+        /// Get all nearby pokestops.
+        /// </summary>
+        /// <returns>FortData of nearby pokestops.</returns>
+        public async Task<List<FortData>> GetNearbyPokeStops()
+        {
+            List<FortData> forts = new List<FortData>();
+            forts = await GetMapCellInformation("Forts", forts);
+            return forts;
+        }
+
+        /// <summary>
+        /// Collect all the nearby pokestops.
+        /// </summary>
+        /// <param name="forts">List of pokestop information.</param>
+        /// <returns>Pokestop summary.</returns>
+        public async Task<PokeStopSummary> CollectPokeStop(List<FortData> forts)
+        {
+            PokeStopSummary psSummary = new PokeStopSummary();
+
+            foreach (var fort in forts)
+            {
+                if (fort.Type != FortType.Checkpoint) continue;
+                var pokeStop = await _client.Fort.SearchFort(fort.Id, fort.Latitude, fort.Longitude);
+                psSummary.PokeStop = pokeStop;
+                psSummary.CreateMessage();
+            }
+            return psSummary;
         }
     }
 }
