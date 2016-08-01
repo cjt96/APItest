@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using PokemonGo.RocketAPI;
 using PokemonGo.RocketAPI.Enums;
@@ -12,9 +10,9 @@ using POGOProtos.Map;
 using Google.Protobuf.Collections;
 using POGOProtos.Map.Pokemon;
 using System.Reflection;
-using static POGOProtos.Networking.Responses.CatchPokemonResponse.Types;
 using PogoLib.Summaries;
 using POGOProtos.Map.Fort;
+using PogoLib.Wearable;
 
 namespace PogoLib
 {
@@ -24,6 +22,8 @@ namespace PogoLib
         private Settings _settings;
         private AuthType _authType;
         private bool _loggedIn;
+
+        public AndroidWear Wear;
 
         /// <summary>
         /// Check if logged into the servers.
@@ -47,6 +47,7 @@ namespace PogoLib
         {
             _settings = new Settings(defaultAlt, defaultLat, defaultLong, refreshToken);
             _authType = AuthType.Google;
+            Wear = new AndroidWear(this);
         }
 
         /// <summary>
@@ -61,6 +62,7 @@ namespace PogoLib
         {
             _settings = new Settings(defaultAlt, defaultLat, defaultLong, username, password);
             _authType = AuthType.Ptc;
+            Wear = new AndroidWear(this);
         }
         #endregion
 

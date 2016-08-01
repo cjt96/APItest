@@ -149,5 +149,23 @@ namespace TestForm
             infoForm.richTextBox1.Text = psSummary.Message;
             infoForm.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            _client.Wear.Refresh();
+            string[] titles = _client.Wear.WearTitle;
+            string[] texts = _client.Wear.WearText;
+
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < titles.Length; i++)
+            {
+                sb.AppendLine(_client.Wear.WearTitle[i]);
+                sb.AppendLine(_client.Wear.WearText[i]);
+            }
+            InfoForm infoForm = new InfoForm();
+            infoForm.richTextBox1.Text = sb.ToString();
+            infoForm.Show();
+        }
     }
 }

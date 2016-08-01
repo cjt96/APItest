@@ -1,3 +1,11 @@
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\bin\Debug\PogoLib.dll
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\bin\Debug\PogoLib.pdb
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\obj\Debug\PogoLib.dll
+C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\obj\Debug\PogoLib.pdb
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\bin\Debug\PogoLib.dll
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\bin\Debug\PogoLib.pdb
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\obj\Debug\PogoLib.dll
+C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\obj\Debug\PogoLib.pdb
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\bin\Debug\PogoLib.dll
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\bin\Debug\PogoLib.pdb
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\bin\Debug\Google.Protobuf.dll
@@ -11,14 +19,5 @@ C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\bin\Debug\Pok
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\bin\Debug\Newtonsoft.Json.xml
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\bin\Debug\S2Geometry.xml
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\obj\Debug\PogoLib.csprojResolveAssemblyReference.cache
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\obj\Debug\PogoLib.dll
 C:\Users\cot\Documents\Visual Studio 2013\Projects\APItest\PogoLib\obj\Debug\PogoLib.pdb
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\bin\Debug\PogoLib.dll
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\bin\Debug\PogoLib.pdb
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\obj\Debug\PogoLib.dll
-C:\Users\Connor\Documents\CW Projects\Pokemon API v2\APItest\PogoLib\obj\Debug\PogoLib.pdb
-C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\bin\Debug\PogoLib.dll
-C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\bin\Debug\PogoLib.pdb
-C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\obj\Debug\PogoLib.dll
-C:\Users\cjt_9\Documents\Development Projects\APItest\PogoLib\obj\Debug\PogoLib.pdb
