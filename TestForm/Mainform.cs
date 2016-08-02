@@ -150,9 +150,9 @@ namespace TestForm
             infoForm.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private async void button4_Click(object sender, EventArgs e)
         {
-            _client.Wear.Refresh();
+            await _client.Wear.Refresh();
             string[] titles = _client.Wear.WearTitle;
             string[] texts = _client.Wear.WearText;
 
@@ -162,6 +162,7 @@ namespace TestForm
             {
                 sb.AppendLine(_client.Wear.WearTitle[i]);
                 sb.AppendLine(_client.Wear.WearText[i]);
+                sb.AppendLine(_client.Wear.WearBackgroundImage[i]);
             }
             InfoForm infoForm = new InfoForm();
             infoForm.richTextBox1.Text = sb.ToString();

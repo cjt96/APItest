@@ -13,6 +13,13 @@ namespace PogoLib.Wearable
 
         private string[] pokemonName;
         private string[] pokemonInfo;
+        private string[] pokemonImageName;
+
+        public string[] WearBackgroundImage
+        {
+            get { return pokemonImageName; }
+            set { pokemonImageName = value; }
+        }
 
         public string[] WearTitle
         {
@@ -36,12 +43,12 @@ namespace PogoLib.Wearable
             //GetEncounterablePokemon();
         }
 
-        public void Refresh()
+        public async Task Refresh()
         {
-            GetEncounterablePokemon();
+            await GetEncounterablePokemon();
         }
 
-        private async void GetEncounterablePokemon()
+        private async Task GetEncounterablePokemon()
         {
             var wildPokemon = await _client.GetWildPokemon();
             var test = from wpokes in wildPokemon
@@ -54,13 +61,21 @@ namespace PogoLib.Wearable
         private void BuildPokemonInfo(List<WildPokemon> wildPokemon)
         {
             List<string> information = new List<string>();
+            List<string> imageNames = new List<string>();
             foreach (var pokemon in wildPokemon)
             {
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine(string.Format("The pokemon despawns in {0}", GetMinutesAndSeconds(pokemon.TimeTillHiddenMs)));
                 information.Add(sb.ToString());
+                imageNames.Add(string.Format("pokemon_{0}.png",GetImageName((int)pokemon.PokemonData.PokemonId)));
             }
             pokemonInfo = information.ToArray<string>();
+            pokemonImageName = imageNames.ToArray<string>();
+        }
+
+        private string GetImageName(int pokeNumber)
+        {
+            return pokeNumber.ToString("D3");
         }
 
         private string GetMinutesAndSeconds(int ms)
