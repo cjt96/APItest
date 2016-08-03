@@ -64,9 +64,8 @@ namespace PogoLib.Wearable
             List<string> imageNames = new List<string>();
             foreach (var pokemon in wildPokemon)
             {
-                StringBuilder sb = new StringBuilder();
-                sb.AppendLine(string.Format("The pokemon despawns in {0}", GetMinutesAndSeconds(pokemon.TimeTillHiddenMs)));
-                information.Add(sb.ToString());
+                string info = string.Format("The pokemon despawns in {0}", GetMinutesAndSeconds(pokemon.TimeTillHiddenMs));
+                information.Add(info);
                 imageNames.Add(string.Format("pokemon_{0}.png",GetImageName((int)pokemon.PokemonData.PokemonId)));
             }
             pokemonInfo = information.ToArray<string>();
@@ -81,7 +80,7 @@ namespace PogoLib.Wearable
         private string GetMinutesAndSeconds(int ms)
         {
             TimeSpan t = TimeSpan.FromMilliseconds(ms);
-            string answer = string.Format("{0:D1}m:{1:D2}s",
+            string answer = string.Format("{0:D1}:{1:D2}mins",
                                     t.Minutes,
                                     t.Seconds);
             return answer;

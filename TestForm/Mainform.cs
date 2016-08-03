@@ -10,6 +10,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,10 +19,17 @@ namespace TestForm
     public partial class Mainform : Form
     {
         public PogoClient _client;
+        NotifyIcon notifyIcon;
+        private List<string> nameHistory;
+        bool displayNotification;
 
         public Mainform()
         {
             InitializeComponent();
+            notifyIcon = new NotifyIcon();
+            notifyIcon.Icon = SystemIcons.Application;
+            notifyIcon.Visible = true;
+            nameHistory = new List<string>();
         }
 
         private async void btnPokeNear_Click(object sender, EventArgs e)
@@ -152,21 +160,41 @@ namespace TestForm
 
         private async void button4_Click(object sender, EventArgs e)
         {
+            await StartTimer(new CancellationToken());
+        }
+
+        private async Task StartTimer(CancellationToken cancelToken)
+        {
+            while (!cancelToken.IsCancellationRequested)
+            {
+                await DoScan();
+                await Task.Delay(60000, cancelToken);
+            }
+        }
+
+        private async Task DoScan()
+        {
+            StringBuilder sb = new StringBuilder();
             await _client.Wear.Refresh();
             string[] titles = _client.Wear.WearTitle;
             string[] texts = _client.Wear.WearText;
 
-            StringBuilder sb = new StringBuilder();
+            displayNotification = nameHistory.SequenceEqual(titles) ? false : true;
 
             for (int i = 0; i < titles.Length; i++)
             {
-                sb.AppendLine(_client.Wear.WearTitle[i]);
-                sb.AppendLine(_client.Wear.WearText[i]);
-                sb.AppendLine(_client.Wear.WearBackgroundImage[i]);
+                sb.AppendLine(titles[i]);
+                sb.AppendLine(texts[i]);
+                //sb.AppendLine(_client.Wear.WearBackgroundImage[i]);
+                sb.AppendLine();
             }
-            InfoForm infoForm = new InfoForm();
-            infoForm.richTextBox1.Text = sb.ToString();
-            infoForm.Show();
+
+            nameHistory.Clear();
+            nameHistory.AddRange(titles);
+
+            notifyIcon.BalloonTipTitle = "Pokémon Found!";
+            notifyIcon.BalloonTipText = sb.ToString();
+            if (notifyIcon.BalloonTipText != string.Empty && displayNotification) notifyIcon.ShowBalloonTip(1000);
         }
     }
 }

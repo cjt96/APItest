@@ -220,7 +220,7 @@ namespace PogoLib
         /// <param name="latitude">Latitude.</param>
         /// <param name="longitude">Longitude.</param>
         /// <param name="altitude">Altitude.</param>
-        public async void UpdatePlayerLocation(double latitude, double longitude, double altitude)
+        public async Task UpdatePlayerLocation(double latitude, double longitude, double altitude)
         {
             var response = await _client.Player.UpdatePlayerLocation(latitude,longitude,altitude);
         }
